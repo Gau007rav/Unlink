@@ -9,7 +9,7 @@ const OpenAIChat = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-    console.log(process.env.PROJECT_KEY);
+
     try {
       const result = await axios.post(
         " https://api.openai.com/v1/chat/completions",
