@@ -1,0 +1,18 @@
+/* YourComponent.css */
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.bubble-up {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bubble-up:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}

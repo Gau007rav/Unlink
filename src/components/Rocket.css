@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color:dark black;
+    background-color: darkblack;
     border-radius: 8px;
     box-shadow: #f0f0f0;
     margin-left: 30px;
@@ -15,6 +15,28 @@
 .image-grid {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+    justify-content: center; /* Centers the content */
+}
+
+/* Media query for iPhone 6s (375px width) */
+@media (max-width: 375px) {
+    .image-grid {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center images horizontally */
+    }
+
+    .image-container {
+        width: 100%; /* Make each container full width */
+        max-width: 300px; /* Restrict max width for better display */
+        margin-bottom: 20px; /* Add spacing between images */
+    }
+
+    .bubble-up {
+        width: 100%; /* Image width set to 100% of its container */
+        height: auto; /* Maintain the aspect ratio */
+    }
 }
 
 .image-container {
@@ -42,7 +64,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .popup-content {
