@@ -20,7 +20,7 @@ const OpenAIChat = () => {
         },
         {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.PROJECT_KEY} `,
             "Content-Type": "application/json",
           },
         }
